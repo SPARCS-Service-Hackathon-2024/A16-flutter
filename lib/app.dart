@@ -9,14 +9,18 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  late final InAppWebViewController _controller;
-  static const String _url = 'https://wayu.vercel.app/Login';
+  late InAppWebViewController _controller;
+  static const String _url = 'http://localhost:5173/Login';
 
   @override
   Widget build(BuildContext context) {
-    return InAppWebView(
-      onWebViewCreated: (controller) => _controller = controller,
-      initialUrlRequest: URLRequest(url: Uri.parse(_url)),
+    return Scaffold(
+      body: SafeArea(
+        child: InAppWebView(
+          onWebViewCreated: (controller) => _controller = controller,
+          initialUrlRequest: URLRequest(url: Uri.parse(_url)),
+        ),
+      ),
     );
   }
 }
