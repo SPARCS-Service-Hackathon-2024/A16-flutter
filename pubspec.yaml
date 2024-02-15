@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_inappwebview: ^5.8.0
+  kakao_flutter_sdk_auth: ^1.8.0
 
 dev_dependencies:
   flutter_test:
