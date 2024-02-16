@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.000396">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: latest_testflight_build_number" time="2.963418">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: flutter build ipa --obfuscate --split-debug-info\=debug-info --release --build-number\=2" time="92.530712">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: get_info_plist_value" time="0.022556">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: upload_to_testflight" time="247.823617">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
