@@ -19,6 +19,11 @@ class _AppState extends State<App> {
         child: InAppWebView(
           onWebViewCreated: (controller) => _controller = controller,
           initialUrlRequest: URLRequest(url: Uri.parse(_url)),
+          initialOptions: InAppWebViewGroupOptions(
+            ios: IOSInAppWebViewOptions(
+              allowsInlineMediaPlayback: true,
+            ),
+          ),
         ),
       ),
     );
